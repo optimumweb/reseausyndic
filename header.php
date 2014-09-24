@@ -48,8 +48,8 @@
                             <h1 class="title no-margin"><?php echo get_the_title($post_id); ?></h1>
                         </div>
                         <div class="grid_6">
-                            <?php if ( get_post_meta($post_id, 'tagline') ) : ?>
-                            <h3 class="tagline"><?php echo get_post_meta($post_id, 'tagline'); ?></h3>
+                            <?php if ( get_post_meta($post_id, 'tagline', true) ) : ?>
+                            <h3 class="tagline"><?php echo get_post_meta($post_id, 'tagline', true); ?></h3>
                             <?php endif; ?>
                         </div>
                         <?php endif; ?>
