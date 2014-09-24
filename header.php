@@ -42,8 +42,13 @@
                     <div class="container <?php wpbp_option('container_class'); ?>">
                         <?php if ( is_front_page() ) : ?>
                         <?php dynamic_sidebar("Front Page Hero"); ?>
+                        <?php endif; ?>
                     </div>
-                    <?php endif; ?>
                 </div>
             </div>
+            <?php if ( is_front_page() ) : ?>
+            <div id="front-page-hero-cta">
+                <?php dynamic_sidebar("Front Page Hero CTA"); ?>
+            </div>
+            <?php endif; ?>
         </section>
