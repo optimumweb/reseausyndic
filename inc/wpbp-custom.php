@@ -13,3 +13,5 @@ function enqueue() {
 	}
 }
 add_action('init', 'enqueue');
+
+wpbp_register_sidebars( array( 'Front Page Hero' ) );
