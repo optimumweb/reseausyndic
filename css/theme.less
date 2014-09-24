@@ -9,6 +9,40 @@ body {
   color: @dark;
 }
 
+h1, h2, h3,
+h4, h5, h6 {
+  &.heading {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: @boldFont;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: @lightFont;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: @largerFontSize;
+}
+
+h4 {
+  font-size: @largeFontSize;
+}
+
+h5 {
+  font-size: @baseFontSize;
+}
+
+h6 {
+  font-size: @smallFontSize;
+}
+
 a {
   color: @blue;
 }
