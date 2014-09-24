@@ -71,6 +71,13 @@
   &:hover {
     text-decoration: none;
 
+    &.bordered {
+      &.white {
+        background-color: @white;
+        color: @dark;
+      }
+    }
+
     &.solid {
       &.white {
         background-color: darken(@white,5%);
