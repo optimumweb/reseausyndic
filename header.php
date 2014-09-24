@@ -38,18 +38,20 @@
 		<?php wpbp_header_after(); ?>
         <section id="hero">
             <div id="hero-overlay">
-                <div class="container <?php wpbp_option('container_class'); ?>">
-                    <div class="grid_6 text-center">
-                        <h4><?php _e("Êtes-vous un", 'reseausyndic'); ?></h4>
-                        <h2><?php _e("Particulier ?", 'reseausyndic'); ?></h2>
-                        <p class="lead"><?php _e("Si vous êtes aux prises avec des problèmes financiers, le syndic de faillite a les solutions pour vous permettre de reprendre le contrôle.", 'reseausyndic'); ?></p>
-                        <a class="button large" href="#"><?php _e("Solutions aux particuliers", 'reseausyndic'); ?></a>
-                    </div>
-                    <div class="grid_6 text-center">
-                        <h4><?php _e("Êtes-vous une", 'reseausyndic'); ?></h4>
-                        <h2><?php _e("Entreprise ?", 'reseausyndic'); ?></h2>
-                        <p class="lead"><?php _e("Si votre entreprise connait des difficultés financières, le syndic de faillite peut décortiquer la situation et vous proposer des solutions.", 'reseausyndic'); ?></p>
-                        <a class="button large" href="#"><?php _e("Solutions aux entreprises", 'reseausyndic'); ?></a>
+                <div id="hero-pad">
+                    <div class="container <?php wpbp_option('container_class'); ?>">
+                        <div class="grid_6 text-center">
+                            <h4><?php _e("Êtes-vous un", 'reseausyndic'); ?></h4>
+                            <h2><?php _e("Particulier ?", 'reseausyndic'); ?></h2>
+                            <p class="lead"><?php _e("Si vous êtes aux prises avec des problèmes financiers, le syndic de faillite a les solutions pour vous permettre de reprendre le contrôle.", 'reseausyndic'); ?></p>
+                            <a class="button large" href="#"><?php _e("Solutions aux particuliers", 'reseausyndic'); ?></a>
+                        </div>
+                        <div class="grid_6 text-center">
+                            <h4><?php _e("Êtes-vous une", 'reseausyndic'); ?></h4>
+                            <h2><?php _e("Entreprise ?", 'reseausyndic'); ?></h2>
+                            <p class="lead"><?php _e("Si votre entreprise connait des difficultés financières, le syndic de faillite peut décortiquer la situation et vous proposer des solutions.", 'reseausyndic'); ?></p>
+                            <a class="button large" href="#"><?php _e("Solutions aux entreprises", 'reseausyndic'); ?></a>
+                        </div>
                     </div>
                 </div>
             </div>
