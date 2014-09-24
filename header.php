@@ -43,7 +43,7 @@
                     <div class="container <?php wpbp_option('container_class'); ?>">
                         <?php if ( is_front_page() ) : ?>
                         <?php dynamic_sidebar("Front Page Hero"); ?>
-                        <?php else : ?>
+                        <?php elseif ( is_page() ) : ?>
                         <div class="grid_6">
                             <h1 class="title no-margin"><?php echo get_the_title($post_id); ?></h1>
                         </div>
