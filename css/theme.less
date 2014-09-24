@@ -30,6 +30,16 @@ nav a {
         color: @white;
         font-size: @smallFontSize;
       }
+
+      ul.menu {
+        float: right;
+
+        > li {
+          display: block;
+          float: left;
+          margin-left: 20px;
+        }
+      }
     }
   }
 
@@ -59,13 +69,17 @@ nav a {
         color: @dark;
       }
 
-      ul.menu > li {
-        display: block;
-        float: left;
-        margin-left: 30px;
+      ul.menu {
+        float: right;
 
-        > a {
-          font-size: @largeFontSize;
+        > li {
+          display: block;
+          float: left;
+          margin-left: 30px;
+
+          > a {
+            font-size: @largeFontSize;
+          }
         }
       }
     }
