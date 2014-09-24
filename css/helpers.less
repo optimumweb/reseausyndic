@@ -43,6 +43,9 @@
   }
 
   &.solid {
+    border-width: 1px;
+    border-style: solid;
+
     &.white {
       background-color: @white;
       color: @dark;
@@ -51,7 +54,7 @@
     &.green {
       background-color: @green;
       color: @white;
-      border-color: 1px solid lighten(@green,7%);
+      border-color: lighten(@green,7%);
     }
 
     &.blue {
