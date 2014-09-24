@@ -5,7 +5,7 @@
 
 body {
   font-family: @baseFontFamily;
-  font-size: 13px;
+  font-size: @baseFontSize;
 }
 
 a {
@@ -24,6 +24,13 @@ nav a {
   #top {
     padding: 10px 0;
     background: @dark;
+
+    #top-nav {
+      a {
+        color: @white;
+        font-size: @smallFontSize;
+      }
+    }
   }
 
   #head {
@@ -58,7 +65,7 @@ nav a {
         margin-left: 30px;
 
         > a {
-          font-size: 1.1em;
+          font-size: @largeFontSize;
         }
       }
     }
