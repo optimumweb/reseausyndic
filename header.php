@@ -5,13 +5,15 @@
         <header id="header" role="banner">
             <?php wpbp_header_inside_before(); ?>
             <section id="top">
-                <div class="grid_12">
-                    <nav id="top-nav" role="navigation">
-                        <div class="container">
-                            <?php wp_nav_menu( array( 'theme_location' => 'secondary_navigation' ) ); ?>
-                            <div class="clear"></div>
-                        </div>
-                    </nav>
+                <div class="container <?php wpbp_option('container_class'); ?>">
+                    <div class="grid_12">
+                        <nav id="top-nav" role="navigation">
+                            <div class="container">
+                                <?php wp_nav_menu( array( 'theme_location' => 'secondary_navigation' ) ); ?>
+                                <div class="clear"></div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </section>
             <section id="head">
