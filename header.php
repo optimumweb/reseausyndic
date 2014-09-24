@@ -46,11 +46,11 @@
                     </div>
                 </div>
             </div>
-            <?php if ( is_front_page() ) : ?>
-            <div id="front-page-hero-cta">
-                <div class="container <?php wpbp_option('container_class'); ?>">
-                    <?php dynamic_sidebar("Front Page Hero CTA"); ?>
-                </div>
-            </div>
-            <?php endif; ?>
         </section>
+        <?php if ( is_front_page() ) : ?>
+        <section id="front-page-cta">
+            <div class="container <?php wpbp_option('container_class'); ?>">
+                <?php dynamic_sidebar("Front Page CTA"); ?>
+            </div>
+        </section>
+        <?php endif; ?>
