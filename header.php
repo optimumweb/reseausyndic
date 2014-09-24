@@ -36,3 +36,16 @@
             <?php wpbp_header_inside_after(); ?>
         </header>
 		<?php wpbp_header_after(); ?>
+        <section id="hero">
+            <div id="hero-overlay">
+                <div class="container <?php wpbp_option('container_class'); ?>">
+                    <div class="grid_6">
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    </div>
+                    <div class="grid_6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
