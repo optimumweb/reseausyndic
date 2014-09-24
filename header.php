@@ -45,7 +45,7 @@
                         <?php else : ?>
                         <div class="grid_6">
                             <?php set_post_id($post_id); ?>
-                            <h1 class="page-title"><?php echo get_the_title($post_id); ?></h1>
+                            <h1 class="page-title no-margin"><?php echo get_the_title($post_id); ?></h1>
                         </div>
                         <div class="grid_6">
 
