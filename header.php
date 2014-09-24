@@ -64,7 +64,7 @@
             </div>
         </section>
         <?php endif; ?>
-        <?php if ( !is_front_page() : ) ?>
+        <?php if ( !is_front_page() ) : ?>
         <section id="breadcrumbs">
             <?php if ( function_exists('yoast_breadcrumb') ) { yoast_breadcrumb(); } ?>
         </section>
