@@ -69,5 +69,19 @@
 
   &:hover {
     text-decoration: none;
+
+    &.solid {
+      &.white {
+        background-color: darken(@white,15%);
+      }
+
+      &.green {
+        background-color: darken(@green,15%);
+      }
+
+      &.blue {
+        background-color: darken(@blue,15%);
+      }
+    }
   }
 }
