@@ -57,6 +57,15 @@
 	background: -moz-gradient(center top, @start 0%, @stop 100%);
 }
 
+.horizontal-gradient(@start: #000, @stop: #FFF) {
+  @mid: ( @start + @stop ) / 2;
+  background: @mid;
+  background: -webkit-gradient(linear, left, right, from(@start), to(@stop));
+  background: -webkit-linear-gradient(@start, @stop);
+  background: -moz-linear-gradient(left, @start 0%, @stop 100%);
+  background: -moz-gradient(left, @start 0%, @stop 100%);
+}
+
 .opacity(@opacity: 100) {
 	filter: alpha(opacity=@opacity);
 	-moz-opacity: @opacity/100;
