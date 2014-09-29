@@ -21,6 +21,18 @@
   .border-radius(@baseRadius);
   .transition();
 
+  &.white {
+    color: @white;
+  }
+
+  &.green {
+    color: @green;
+  }
+
+  &.blue {
+    color: @blue;
+  }
+
   &.bordered {
     border-width: 1px;
     border-style: solid;
@@ -28,17 +40,14 @@
     &.white {
       border-color: @white;
       background-color: @white15;
-      color: @white;
     }
 
     &.green {
       border-color: @green;
-      color: @green;
     }
 
     &.blue {
       border-color: @blue;
-      color: @blue;
     }
   }
 
