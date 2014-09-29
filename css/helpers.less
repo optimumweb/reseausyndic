@@ -37,46 +37,6 @@
     color: @blue;
   }
 
-  &.bordered {
-    border-width: 1px;
-    border-style: solid;
-
-    &.white {
-      border-color: @white;
-      background-color: @white15;
-    }
-
-    &.green {
-      border-color: @green;
-    }
-
-    &.blue {
-      border-color: @blue;
-    }
-  }
-
-  &.solid {
-    border-width: 1px;
-    border-style: solid;
-
-    &.white {
-      background-color: @white;
-      color: @dark;
-    }
-
-    &.green {
-      background-color: @green;
-      color: @white;
-      border-color: lighten(@green,4%);
-    }
-
-    &.blue {
-      background-color: @blue;
-      color: @white;
-      border-color: lighten(@blue,4%);
-    }
-  }
-
   &.arrow {
     position: relative;
     padding-right: 25px;
@@ -106,6 +66,58 @@
 
     &.blue:after {
       border-left-color: @green;
+    }
+  }
+
+  &.bordered {
+    border-width: 1px;
+    border-style: solid;
+
+    &.white {
+      border-color: @white;
+      background-color: @white15;
+    }
+
+    &.green {
+      border-color: @green;
+    }
+
+    &.blue {
+      border-color: @blue;
+    }
+  }
+
+  &.solid {
+    border-width: 1px;
+    border-style: solid;
+
+    &.white {
+      background-color: @white;
+      color: @dark;
+
+      &.arrow:after {
+        border-color: @dark;
+      }
+    }
+
+    &.green {
+      background-color: @green;
+      color: @white;
+      border-color: lighten(@green,4%);
+
+      &.arrow:after {
+        border-color: @white;
+      }
+    }
+
+    &.blue {
+      background-color: @blue;
+      color: @white;
+      border-color: lighten(@blue,4%);
+
+      &.arrow:after {
+        border-color: @white;
+      }
     }
   }
 
