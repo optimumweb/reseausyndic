@@ -50,7 +50,7 @@
 
 .vertical-gradient(@start: #000, @stop: #FFF) {
 	@mid: ( @start + @stop ) / 2;
-	background: @mid;
+	background-color: @mid;
 	background: -webkit-gradient(linear, left top, left bottom, from(@start), to(@stop));
 	background: -webkit-linear-gradient(@start, @stop);
 	background: -moz-linear-gradient(center top, @start 0%, @stop 100%);
@@ -59,11 +59,12 @@
 
 .horizontal-gradient(@start: #000, @stop: #FFF) {
   @mid: ( @start + @stop ) / 2;
-  background: @mid;
-  background: -webkit-gradient(linear, left top, right top, from(@start), to(@stop));
-  background: -webkit-linear-gradient(@start, @stop);
-  background: -moz-linear-gradient(left, @start 0%, @stop 100%);
-  background: -moz-gradient(left, @start 0%, @stop 100%);
+  background-color: @mid;
+  background-image: -webkit-gradient(linear, left top, right top, from(@start), to(@stop));
+  background-image: -webkit-linear-gradient(left, @start, @stop);
+  background-image: -moz-linear-gradient(left, @start, @stop);
+  background-image: -ms-linear-gradient(left, @start, @stop);
+  background-image: -o-linear-gradient(left, @start, @stop);
 }
 
 .opacity(@opacity: 100) {
