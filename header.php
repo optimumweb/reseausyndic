@@ -6,7 +6,7 @@
             <?php wpbp_header_inside_before(); ?>
             <section id="top">
                 <div class="container <?php wpbp_option('container_class'); ?>">
-                    <div class="grid_12">
+                    <div class="grid_12 text-right mobile-center">
                         <nav id="top-nav" role="navigation">
                             <div class="container">
                                 <?php wp_nav_menu( array( 'theme_location' => 'secondary_navigation' ) ); ?>
