@@ -18,12 +18,12 @@
             </section>
             <section id="head">
                 <div class="container <?php wpbp_option('container_class'); ?>">
-                    <div class="grid_3">
+                    <div class="grid_3 mobile-center">
                         <h1 id="logo">
                             <a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
                         </h1>
                     </div>
-                    <div class="grid_9">
+                    <div class="grid_9 text-right mobile-center">
                         <nav id="main-nav" role="navigation">
                             <div class="container">
                                 <?php wp_nav_menu( array( 'theme_location' => 'primary_navigation' ) ); ?>
