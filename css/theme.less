@@ -225,7 +225,7 @@ nav a {
   font-size: @smallerFontSize;
   padding: 1em 0;
   background-color: @dark;
-  color: @white;
+  color: @white70;
 
   #footer-nav {
     ul.menu {
@@ -236,7 +236,11 @@ nav a {
     }
 
     a {
-      color: @white;
+      color: @white70;
+
+      &:hover {
+        color: @white;
+      }
     }
   }
 }
