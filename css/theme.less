@@ -150,6 +150,10 @@ nav a {
         display: block;
         line-height: 40px;
         color: @dark;
+
+        &:hover {
+          color: @blue;
+        }
       }
 
       ul.menu {
@@ -159,10 +163,6 @@ nav a {
 
           > a {
             font-size: @smallFontSize;
-
-            &:hover {
-              border-bottom: 1px solid @blue;
-            }
           }
         }
       }
