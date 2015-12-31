@@ -254,3 +254,24 @@ body.archive {
     display: none;
   }
 }
+
+.syndic {
+  ul.contacts {
+    list-style: none;
+
+    > li {
+      &:before {
+        font-family: FontAwesome;
+        margin: 0 -1em 0.5em 0;
+      }
+
+      &.adr:before {
+        content: "\f041";
+      }
+
+      &.tel:before {
+        content: "\f095";
+      }
+    }
+  }
+}
