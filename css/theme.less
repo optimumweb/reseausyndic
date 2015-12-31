@@ -285,8 +285,7 @@ body.archive {
     list-style: none;
 
     &:after {
-      content: " ";
-      clear: both;
+      .clear();
     }
   }
 
@@ -297,6 +296,12 @@ body.archive {
       width: 25%;
       min-height: 1px;
       padding: 0 1em 1em 0;
+
+      &:nth-child(4n) {
+        &:after {
+          .clear();
+        }
+      }
 
       > a {
         font-weight: bold;
