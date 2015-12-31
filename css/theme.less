@@ -278,3 +278,34 @@ body.archive {
     }
   }
 }
+
+body.trouver-un-syndic {
+  #main ul {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+      display: block;
+      float: left;
+      width: 25%;
+
+      > ul {
+        margin: 0;
+        list-style: none;
+        font-size: 0.875em;
+
+        > li {
+          display: inline;
+
+          &:after {
+            content: ", ";
+          }
+
+          &:last-child:after {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
