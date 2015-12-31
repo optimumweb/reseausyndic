@@ -279,31 +279,29 @@ body.archive {
   }
 }
 
-body.trouver-un-syndic {
-  #main ul {
-    margin-left: 0;
-    list-style: none;
+.regions > ul {
+  margin-left: 0;
+  list-style: none;
 
-    > li {
-      display: block;
-      float: left;
-      width: 25%;
+  > li {
+    display: block;
+    float: left;
+    width: 25%;
 
-      > ul {
-        margin: 0;
-        list-style: none;
-        font-size: 0.875em;
+    > ul {
+      margin: 0;
+      list-style: none;
+      font-size: 0.875em;
 
-        > li {
-          display: inline;
+      > li {
+        display: inline;
 
-          &:after {
-            content: ", ";
-          }
+        &:after {
+          content: ", ";
+        }
 
-          &:last-child:after {
-            content: "";
-          }
+        &:last-child:after {
+          content: "";
         }
       }
     }
