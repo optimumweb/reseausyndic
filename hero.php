@@ -17,7 +17,9 @@
                     </div>
                 <?php elseif ( is_tax() ) : ?>
                     <div class="grid_12">
-                        <h1 class="title no-margin"><?php echo $wp_query->get_queried_object()->name; ?></h1>
+                        <h1 class="title no-margin">
+                            <?php echo sprintf(__("Syndics à %s", 'reseausyndic'), $wp_query->get_queried_object()->name); ?>
+                        </h1>
                     </div>
                 <?php endif; ?>
             </div>
