@@ -5,23 +5,20 @@
         <div id="hero-pad">
             <div class="container <?php wpbp_option('container_class'); ?>">
                 <?php if ( is_front_page() ) : ?>
-                <?php dynamic_sidebar("Front Page Hero"); ?>
+                    <?php dynamic_sidebar("Front Page Hero"); ?>
                 <?php elseif ( is_page() ) : ?>
-                <div class="grid_6">
-                    <h1 class="title no-margin">
-                        <?php var_dump( is_tax() ); ?>
-                        <?php if ( is_tax() ) : ?>
-                            <?php echo $wp_query->get_queried_object()->name; ?>
-                        <?php else : ?>
-                            <?php echo get_the_title($post_id); ?>
+                    <div class="grid_6">
+                        <h1 class="title no-margin"><?php echo get_the_title($post_id); ?></h1>
+                    </div>
+                    <div class="grid_6">
+                        <?php if ( get_post_meta($post_id, 'tagline', true) ) : ?>
+                        <h3 class="tagline"><?php echo get_post_meta($post_id, 'tagline', true); ?></h3>
                         <?php endif; ?>
-                    </h1>
-                </div>
-                <div class="grid_6">
-                    <?php if ( get_post_meta($post_id, 'tagline', true) ) : ?>
-                    <h3 class="tagline"><?php echo get_post_meta($post_id, 'tagline', true); ?></h3>
-                    <?php endif; ?>
-                </div>
+                    </div>
+                <?php elseif ( is_tax() ) : ?>
+                    <div class="grid_12">
+                        <h1 class="title no-margin"><?php echo $wp_query->get_queried_object()->name; ?></h1>
+                    </div>
                 <?php endif; ?>
             </div>
         </div>
