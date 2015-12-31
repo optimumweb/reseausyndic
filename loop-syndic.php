@@ -6,7 +6,7 @@
     <h3 class="fn org"><?php the_title(); ?></h3>
     <ul class="contacts">
         <li class="adr" itemprop="address" itemtype="http://schema.org/PostalAddress">
-            <span class="street-address" itemprop="streetAddress"><?php echo get_field('street_address'); ?></span><br />
+            <span class="street-address" itemprop="streetAddress"><?php echo get_field('street_address'); ?></span>,
             <span class="locality" itemprop="addressLocality"><?php echo get_field('locality'); ?></span>
             <span class="region" itemprop="addressRegion"><?php echo get_field('region'); ?></span>
             <span class="postal-code" itemprop="postalCode"><?php echo get_field('postal_code'); ?></span>
