@@ -9,7 +9,7 @@
                 <div class="grid_6">
                     <h1 class="title no-margin">
                         <?php if ( is_tax() ) : ?>
-                        allo
+                            <?php global $wp_query; echo $wp_query->get_queried_object()->name; ?>
                             <?php $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); echo $term->name; ?>
                         <?php else : ?>
                             <?php echo get_the_title($post_id); ?>
