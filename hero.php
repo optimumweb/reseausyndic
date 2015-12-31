@@ -9,8 +9,9 @@
                 <?php elseif ( is_page() ) : ?>
                 <div class="grid_6">
                     <h1 class="title no-margin">
+                        <?php var_dump( is_tax() ); ?>
                         <?php if ( is_tax() ) : ?>
-                            <?php $term = $wp_query->get_queried_object(); var_dump($term); echo $term->name; ?>
+                            <?php echo $wp_query->get_queried_object()->name; ?>
                         <?php else : ?>
                             <?php echo get_the_title($post_id); ?>
                         <?php endif; ?>
@@ -26,5 +27,3 @@
         </div>
     </div>
 </section>
-<?php var_dump( is_tax() ); ?>
-<pre><?php var_dump($wp_query); ?></pre>
