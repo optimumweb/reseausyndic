@@ -26,4 +26,5 @@
         </div>
     </div>
 </section>
+<?php var_dump( is_tax() ); ?>
 <pre><?php var_dump($wp_query); ?></pre>
