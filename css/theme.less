@@ -279,32 +279,44 @@ body.archive {
   }
 }
 
-.regions > ul {
-  margin-left: 0;
-  list-style: none;
-  .columns(25%, 4, 2em);
+.regions {
+  ul {
+    margin-left: 0;
+    list-style: none;
 
-  > li {
-    margin-bottom: 2em;
-
-    > a {
-      font-weight: bold;
+    &:after {
+      content: " ";
+      clear: both;
     }
+  }
 
-    > ul {
-      margin: 0;
-      list-style: none;
-      font-size: 0.875em;
+  > ul {
+    > li {
+      display: block;
+      float: left;
+      width: 25%;
+      min-height: 1px;
+      padding: 0 1em 1em 0;
 
-      > li {
-        display: inline;
+      > a {
+        font-weight: bold;
+      }
 
-        &:after {
-          content: ", ";
-        }
+      > ul {
+        margin: 0;
+        list-style: none;
+        font-size: 0.875em;
 
-        &:last-child:after {
-          content: "";
+        > li {
+          display: inline;
+
+          &:after {
+            content: ", ";
+          }
+
+          &:last-child:after {
+            content: "";
+          }
         }
       }
     }
