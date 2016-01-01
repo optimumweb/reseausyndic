@@ -250,7 +250,19 @@ nav a {
 }
 
 .box {
+  position: relative;
   .vertical-gradient(@green, @blue);
+
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0.25em;
+    bottom: 0.25em;
+    left: 0.25em;
+    right: 0.25em;
+    background-color: @white;
+  }
 }
 
 body.archive {
