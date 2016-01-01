@@ -102,6 +102,16 @@ nav a {
   }
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  padding: 0.25em;
+  border: 1px solid @borderColor;
+}
+
 #header {
   #top {
     font-size: @smallerFontSize;
@@ -350,5 +360,12 @@ body.archive {
         }
       }
     }
+  }
+}
+
+.gform_wrapper {
+  ul.gform_fields {
+    list-style: none;
+    margin-left: 0;
   }
 }
