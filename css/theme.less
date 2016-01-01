@@ -376,6 +376,12 @@ body.archive {
     list-style: none;
     margin-left: 0;
 
+    .validation_error {
+      font-size: 0.875em;
+      font-style: italic;
+      color: @red;
+    }
+
     > li.gfield {
       margin-bottom: 1em;
 
@@ -411,7 +417,6 @@ body.archive {
         font-style: italic;
       }
 
-      .validation_error,
       .validation_message {
         color: @red;
       }
