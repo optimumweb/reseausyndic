@@ -267,29 +267,6 @@ select {
   }
 }
 
-.box {
-  position: relative;
-  padding: 0.5em 1.5em;
-  font-size: 0.875em;
-  .vertical-gradient(@green, @blue);
-
-  &:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0.25rem;
-    bottom: 0.25rem;
-    left: 0.25rem;
-    right: 0.25rem;
-    background-color: @white;
-  }
-
-  > * {
-    position: relative;
-    z-index: 500;
-  }
-}
-
 body.archive {
   #main .page-title {
     display: none;
