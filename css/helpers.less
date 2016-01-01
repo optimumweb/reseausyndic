@@ -100,6 +100,16 @@
       }
     }
 
+    &.gray,
+    &.grey {
+      background-color: @lightGrey;
+      color: @dark;
+
+      &.arrow:after {
+        border-left-color: @dark;
+      }
+    }
+
     &.green {
       background-color: @green;
       color: @white;
@@ -163,6 +173,11 @@
     &.solid {
       &.white {
         background-color: darken(@white,7%);
+      }
+
+      &.gray,
+      &.grey {
+        background-color: darken(@lightGrey,7%);
       }
 
       &.green {
