@@ -409,7 +409,8 @@ body.archive {
 .widget {
   position: relative;
 
-  &[class^="cover-"] {
+  &[class^="cover-"],
+  &[class*=' cover-'] {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -419,7 +420,8 @@ body.archive {
     background-image: url(../img/widget-cover-1.png);
   }
 
-  &[class^="icon-"] {
+  &[class^="icon-"],
+  &[class*=' icon-'] {
     &:before {
       content: " ";
       display: block;
