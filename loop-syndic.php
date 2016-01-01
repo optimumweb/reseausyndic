@@ -4,10 +4,10 @@
 <article id="syndic-<?php the_ID(); ?>" class="syndic vcard" itemtype="http://schema.org/LocalBusiness">
     <?php wpbp_post_inside_before(); ?>
     <div class="container">
-        <div class="grid_3">
+        <div class="grid_2">
             <?php if ( has_post_thumbnail() ) the_post_thumbnail('full', array( 'class' => "logo" )); ?>
         </div>
-        <div class="grid_9">
+        <div class="grid_10">
             <h3 class="fn org">
                 <?php if ( get_field('url') ) : ?>
                 <a class="url" href="<?php echo get_field('url'); ?>" target="_blank"><?php the_title(); ?></a>
