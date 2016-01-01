@@ -5,7 +5,7 @@
     <?php wpbp_post_inside_before(); ?>
     <div class="container">
         <div class="grid_3">
-            <?php the_post_thumbnail('full', array( 'class' => "logo" )); ?>
+            <?php if ( has_post_thumbnail() ) the_post_thumbnail('full', array( 'class' => "logo" )); ?>
         </div>
         <div class="grid_9">
             <h3 class="fn org">
