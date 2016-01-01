@@ -17,7 +17,7 @@
                     </div>
                 <?php elseif ( is_tax() ) : ?>
                     <div class="grid_12">
-                        <h1 class="title no-margin"><?php echo explode(' - ', wp_title('', false))[0]; ?></h1>
+                        <h1 class="title no-margin"><?php echo explode(' - ', wp_title('', false), 2)[0]; ?></h1>
                     </div>
                 <?php endif; ?>
             </div>
