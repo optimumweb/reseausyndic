@@ -251,6 +251,7 @@ nav a {
 
 .box {
   position: relative;
+  padding: 1em;
   .vertical-gradient(@green, @blue);
 
   &:before {
@@ -262,6 +263,11 @@ nav a {
     left: 0.25em;
     right: 0.25em;
     background-color: @white;
+  }
+
+  > * {
+    position: relative;
+    z-index: 500;
   }
 }
 
