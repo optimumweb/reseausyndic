@@ -371,16 +371,19 @@ body.archive {
 }
 
 .gform_wrapper {
+  padding: 1em 1.5em;
+  border: 1px solid @borderColor;
+
+  .validation_error {
+    font-size: 0.875em;
+    font-style: italic;
+    color: @red;
+  }
+
   ul.gform_fields {
     font-size: 0.875em;
     list-style: none;
     margin-left: 0;
-
-    .validation_error {
-      font-size: 0.875em;
-      font-style: italic;
-      color: @red;
-    }
 
     > li.gfield {
       margin-bottom: 1em;
