@@ -109,7 +109,9 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+textarea,
+select {
   width: 100%;
   font-family: @baseFontFamily;
   font-size: @baseFontSize;
@@ -375,7 +377,7 @@ body.archive {
     margin-left: 0;
 
     > li.gfield {
-      margin-bottom: 0.5em;
+      margin-bottom: 1em;
 
       .ginput_container {
         > span {
@@ -385,7 +387,7 @@ body.archive {
           padding-right: 1em;
 
           > label {
-            font-size: 0.75em;
+            font-size: 0.875em;
             font-weight: normal;
           }
         }
