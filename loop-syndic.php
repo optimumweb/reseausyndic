@@ -8,13 +8,11 @@
             <?php if ( has_post_thumbnail() ) the_post_thumbnail('full', array( 'class' => "logo" )); ?>
         </div>
         <div class="grid_10">
-            <h3 class="fn org">
-                <?php if ( get_field('url') ) : ?>
-                <a class="url" href="<?php echo get_field('url'); ?>" target="_blank"><?php the_title(); ?></a>
-                <?php else : ?>
-                <?php the_title(); ?>
-                <?php endif; ?>
-            </h3>
+            <?php if ( get_field('url') ) : ?>
+            <h3><a class="url fn org" href="<?php echo get_field('url'); ?>" target="_blank"><?php the_title(); ?></a></h3>
+            <?php else : ?>
+            <h3 class="fn org"><?php the_title(); ?></h3>
+            <?php endif; ?>
             <ul class="contacts">
                 <li class="adr" itemprop="address" itemtype="http://schema.org/PostalAddress">
                     <span class="street-address" itemprop="streetAddress"><?php echo get_field('street_address'); ?></span>,
