@@ -5,7 +5,13 @@
     <?php wpbp_post_inside_before(); ?>
     <div class="container">
         <div class="grid_2">
-            <?php if ( has_post_thumbnail() ) the_post_thumbnail('full', array( 'class' => "logo" )); ?>
+            <?php if ( has_post_thumbnail() ) : ?>
+            <?php if ( get_field('url') ) : ?>
+            <a href="<?php echo get_field('url'); ?>" target="_blank"><?php the_post_thumbnail('full', array( 'class' => "logo" )); ?></a>
+            <?php else : ?>
+            <?php the_post_thumbnail('full', array( 'class' => "logo" )); ?>
+            <?php endif; ?>
+            <?php endif; ?>
         </div>
         <div class="grid_10">
             <?php if ( get_field('url') ) : ?>
