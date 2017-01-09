@@ -8,10 +8,7 @@
                 <div class="container <?php wpbp_option('container_class'); ?>">
                     <div class="grid_12 text-right mobile-center">
                         <nav id="top-nav" role="navigation">
-                            <div class="container">
-                                <?php wp_nav_menu( array( 'theme_location' => 'secondary_navigation' ) ); ?>
-                                <div class="clear"></div>
-                            </div>
+                            <?php wp_nav_menu(array( 'theme_location' => 'secondary_navigation' )); ?>
                         </nav>
                     </div>
                 </div>
@@ -25,10 +22,7 @@
                     </div>
                     <div class="grid_9 text-right mobile-center">
                         <nav id="main-nav" role="navigation">
-                            <div class="container">
-                                <?php wp_nav_menu( array( 'theme_location' => 'primary_navigation' ) ); ?>
-                                <div class="clear"></div>
-                            </div>
+                            <?php wp_nav_menu(array( 'theme_location' => 'primary_navigation' )); ?>
                         </nav>
                     </div>
                 </div>
