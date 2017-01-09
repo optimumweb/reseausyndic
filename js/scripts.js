@@ -1,5 +1,5 @@
 $(document).ready(function() {
 
-    $('#main-nav').wpbpResponsiveNav();
+    $('#top-nav').wpbpResponsiveNav();
 
 });
