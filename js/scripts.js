@@ -1,13 +1,5 @@
-!function ($) {
+$(document).ready(function() {
 
-    $(function () {
+    $('#main-nav').wpbpResponsiveNav();
 
-        $(document).ready(function() {
-
-            // put your jquery code here
-
-        });
-
-    });
-
-}(window.jQuery);
+});
